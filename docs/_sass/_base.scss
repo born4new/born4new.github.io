@@ -18,6 +18,15 @@ hr.light {
     border-color: white;
 }
 
+.bg-primary a {
+    @include transition-all;
+    color: rgb(226, 142, 142);
+    &:hover,
+    &:focus {
+        color: lighten(rgb(226, 142, 142), 10%);
+    }
+}
+
 a {
     @include transition-all;
     color: $theme-primary;
@@ -175,7 +184,7 @@ header {
             }
             p {
                 font-weight: 300;
-                color: rgba(white, .7);
+                color: white;
                 font-size: 16px;
                 margin-bottom: 50px;
             }
@@ -348,4 +357,3 @@ img::-moz-selection {
 body {
     -webkit-tap-highlight-color: $theme-dark;
 }
-
