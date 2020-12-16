@@ -23,7 +23,7 @@ hr.light {
     color: rgb(226, 142, 142);
     &:hover,
     &:focus {
-        color: lighten(rgb(226, 142, 142), 10%);
+        color: lighten(rgb(226, 142, 142), 20%);
     }
 }
 
@@ -32,7 +32,7 @@ a {
     color: $theme-primary;
     &:hover,
     &:focus {
-        color: darken($theme-primary, 10%);
+        color: lighten($theme-primary, 20%);
     }
 }
 
@@ -342,6 +342,10 @@ header {
     color: white;
     text-shadow: none;
     background: $theme-dark;
+}
+
+img {
+  padding: 10px;
 }
 
 img::selection {
