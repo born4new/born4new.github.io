@@ -3,6 +3,10 @@ p.slideshow-control {
    
 }
 
+.slideshow-control span:not(.selected) {
+    color: grey;
+}
+
 .slideshow-control span {
     padding-right:2em;
     cursor:pointer;

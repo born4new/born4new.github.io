@@ -1,3 +1,15 @@
+function resizeImageContainer() {
+    $('.slideshow-img').each(function() {
+        const imagesContainer = $(this);
+        imagesContainer.find('img').first().each(function() {
+            const image = $(this);
+            const imgHeight = image.height();
+            console.log("image height ", imgHeight)
+            imagesContainer.height(imgHeight + 20);
+        })
+    });
+}
+
 $(document).ready(function() {
  
     $(".slideshow-control").each(function() {
@@ -15,14 +27,11 @@ $(document).ready(function() {
         });
     });
 
+
     //set the height of the div containing the images to the height of the images it contains
-    $('.slideshow-img').each(function() {
-        const imagesContainer = $(this);
-        imagesContainer.find('img').first().each(function() {
-            const image = $(this);
-            const imgHeight = image.height();
-            console.log("image height ", imgHeight)
-            imagesContainer.height(imgHeight + 20);
-        })
-    })
+    resizeImageContainer();
+
+    $( window ).resize(function() {
+        resizeImageContainer();
+    });
 });
