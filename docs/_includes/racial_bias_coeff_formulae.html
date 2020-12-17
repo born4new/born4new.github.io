@@ -4,7 +4,7 @@
       <div class="col-lg-12 text-center">
 	    <h2 class="section-heading">Racial bias coefficient formulae</h2>
 		<hr class="primary">
-		<p class="text">
+		<p class="text-left">
 	      Our goal here is to <strong>quantify the racial bias of a particular police officer</strong> (informally, a cop).
 		  To quantify the level of racial bias of a cop in his stop decision process, we have started from the following statement: 
 		  if we observe the distribution of the race of drivers stopped by an officer when it is dark (i.e., when a cop can not see the driver’s race), 
@@ -12,13 +12,14 @@
 		  Then, if we compare this distribution to the race driver stopped distribution when it is light, 
 		  a difference from the night distribution highlights a racial bias in stop decision.
 		</p>
-		<p class="text">
+		<p class="text-left">
 		  More technically, for each officer, we have followed these steps:
 		</p>
 	  </div>
 	  <div class="col-lg-12 text-center">
-		<p class="text">
-		  1. We capture the number of black, Hispanic and white driver stopped when it is light and when it is dark:
+		<h3>Step 1.</h3>
+		<p class="text-center">
+		   We capture the number of black, Hispanic and white driver stopped when it is light and when it is dark:
 		</p>
 	  </div>
 	  <div class="col-lg-12 text-center">
@@ -30,24 +31,27 @@
 		</p>
 	  </div>
 	  <div class="col-lg-12 text-center">
+		<h3>Step 2.</h3>
 		<p class="text">
-	      2. We compute the proportion of driver race r stopped when it is light and when it is dark:
+	       We compute the proportion of driver race r stopped when it is light and when it is dark:
 		</p>
 	  </div>
 	  <div class="col-lg-12 text-center">
 		  <img src="img/beta_formulae_latex.png" alt="beta" width="30%">
 	  </div>
 	  <div class="col-lg-12 text-center">
+		<h3>Step 3.</h3>
 		<p class="text">
-		  3. We compute the ratio of the proportion of race drivers r stopped when it is light over the proportion of races driver r 
+		  We compute the ratio of the proportion of race drivers r stopped when it is light over the proportion of races driver r 
 		  stopped when it is dark:
 		</p>
       <div class="col-lg-12 text-center">
 		  <img src="img/sigma_formulae_latex.png" alt="beta" width="13%">
 	  </div>
 	  <div class="col-lg-12 text-center">
+		<h3>Step 4.</h3>
 		<p class="text">
-		  4. We compute the ratio of the previous ratio of race driver r over the sum of all previous ratio, we center it 
+		  We compute the ratio of the previous ratio of race driver r over the sum of all previous ratio, we center it 
 		  (here we have 3 races, so we center by 1/3, since it is the perfect ratio when there is no racial bias) and 
 		  pick the absolute value:
 		</p>
@@ -56,8 +60,9 @@
 		  <img src="img/lambda_formulae_latex.png" alt="beta" width="30%">
 	  </div>
 	  <div class="col-lg-12 text-center">
+		<h3>Step 5.</h3>
 		<p class="text">
-		  5. We compute our final coefficient using exponential to penalize more big-ratio differences:
+		  We compute our final coefficient using exponential to penalize more big-ratio differences:
 		</p>
 	  </div>
 	  <div class="col-lg-12 text-center">
