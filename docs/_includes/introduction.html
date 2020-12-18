@@ -4,20 +4,34 @@
       <div class="col-lg-12 text-center">
         <h2 class="section-heading">Introduction</h2>
         <hr class="light">
-        <p class="text">
-          This data story is a creative extension of the Standford Paper entitled <a target="_blank" href="https://openpolicing.stanford.edu/publications/">"A large-scale analysis of racial 
-            disparities in police stops across the United States"</a>, where the authors analysed the racial bias that some US police officers suffer from against minorities 
-            when doing police stops.
-        </p>
-        <p class="text">
-          In this extension, we would like to go a step back and <em>study the police officers in that study</em>.
 
-          In regards to racial bias, we will try to understand <strong>what makes a good cop, and what makes a bad cop?</strong>
+        <p class="text-left">
+          This data story is a creative extension of the Stanford Paper entitled <a target="_blank" href="https://openpolicing.stanford.edu/publications/">"A large-scale analysis of racial disparities in police stops across the United States"</a>. 
+            In this paper the authors analysed the disparity in the treatment of people of different skin color in the USA by police officers. 
+            The authors were able to draw the conclusion that an officer’s behavior depends on the skin color of the persons they apprehend.
+            In this extension, we went a step back and studied the individual police officers behaviours’ in that study.
+            We tried to understand what attributes of an officer is likely to make <strong>the officer a “good cop”, or a “bad cop”</strong>.
+          
         </p>
-        <p class="text">
-          To that end, we have come up with a formula that we call the <a href="#gcbc-formula">Good Cop, Bad Cop Formula (a.k.a. the GCBC formula)</a>,
-          that we will use as the basic data for our analysis: this will be the atom in our new dataset if you will.
+        <p class="text-left"> 
+          To that end, we used the racial bias formula proposed by the author of the paper.  
+          <a href="#gcbc-formula">This formula</a> allows to determine which officer is a "Good Cop” or a “Bad cop” (a.k.a. the Good Cop Bad Cop formula). 
+            We  used this formula as the main statistic for our analysis. This will be the atom in our new dataset if you will.
+            In this project we studied the root causes of an officer’s racial bias. 
+            We studied individual aspects of a police officer in order to determine in which proportion those characteristic determined the officer’s racial bias.
+            We also studied how the racial bias is distributed over the USA in multiple cities and states. 
         </p>
+        
+        <h2 class="section-heading">Data description</h2>
+        <p class="text-left">
+        For this extension we used the data that the Stanford lab made available on their website. 
+          Each file provided by the lab describes information about police stops that occurred at a specific location in the USA.
+          Not all files were as informative. For this reason we disregarded some police agencies’ data that did not allow to describe 
+          an individual officer’s behaviour. The state of Missouri, among others, did not provide the police officers’ id which was essential 
+          for computing the racial bias associated to an individual police officer. Other files did not provide date information about the stops
+          described. Time was crucial for computing racial bias formula and hence those files also ended up in the garbage.
+      </p>
+      
       </div>
     </div>
   </div>
