@@ -18,14 +18,76 @@
       <h3>Part 1 - What actions do Cops take when arresting people?</h3>
       <hr class="light">
 
-      <img src="img/question-5/part-1/CA_oakland.png" alt="CA_oakland" width="10%">
-      <img src="img/question-5/part-1/CA_san_bernardino.png" alt="CA_san_bernardino" width="10%">
-      <img src="img/question-5/part-1/CA_san_diego.png" alt="CA_san_diego" width="10%">
-      <img src="img/question-5/part-1/CA_san_francisco.png" alt="CA_san_francisco" width="10%">
-      <img src="img/question-5/part-1/CA_san_jose.png" alt="CA_san_jose" width="10%">
-      <img src="img/question-5/part-1/CA_stockton.png" alt="CA_stockton" width="10%">
+      <p>
+        Police Officers have several actions that they can perform when stopping car drivers. The 6 possible options in this dataset are:
+      </p>
     </div>
 
+    <div class="col-lg-6 col-lg-offset-3 text-left">
+      <p>
+        <ul>
+          <li><u>Citation Issued:</u> This is a fine that the driver will have to pay</li>
+          <li><u>Warning Issued:</u> No fine: just a warning (pfew!)</li>
+          <li><u>Arrest Made:</u> The driver was arrested</li>
+          <li><u>Frisk Performed:</u> A physical search was made</li>
+          <li><u>Search Conducted:</u> The car got searched for illegal possessions</li>
+          <li><u>Contraband Found:</u> A successful search</li>
+        </ul>
+      </p>
+    </div>
+
+    <div class="col-lg-12 text-center">    
+      <p>
+        Below are the actions that Police Officers took in California, in the datasets we had available from that study.
+      </p>
+    </div>
+
+    <div class="col-lg-12 text-center">
+      <img src="img/question-5/part-1/CA_oakland.png" alt="CA_oakland" width="49%">
+      <img src="img/question-5/part-1/CA_san_bernardino.png" alt="CA_san_bernardino" width="49%">
+    </div>
+    <div class="col-lg-12 text-center">
+      <img src="img/question-5/part-1/CA_san_diego.png" alt="CA_san_diego" width="49%">
+      <img src="img/question-5/part-1/CA_san_francisco.png" alt="CA_san_francisco" width="49%">
+    </div>
+    <div class="col-lg-12 text-center">
+      <img src="img/question-5/part-1/CA_san_jose.png" alt="CA_san_jose" width="49%">
+      <img src="img/question-5/part-1/CA_stockton.png" alt="CA_stockton" width="49%">
+    </div>
+
+    <div class="col-lg-12 text-center">
+      <p>To have correct conclusions about the data, there are a few things to keep in mind...</p>
+      
+      <p>
+        First of all, <strong>not every county/state will report its data the same way</strong>: different data will be
+        available depending on the city/state mentioned.
+      
+        If you look at San Francisco, CA, one could think that the Police did not have perform a single frisk in 15 years,
+        but that is unfortunately not the case: it is just that San Francisco data did not contain mentions of frisking (for a
+        list of which dataset contains which actions possible, we will refer you to <a
+          target="_blank" href="https://openpolicing.stanford.edu/data/">the data section of the original study's website</a>).
+      </p>
+      
+      <p>
+        Secondly, an astute viewer will quickly realize that the columns do not necessarily add up to 100%, and sometimes to
+        way more than 100%.
+
+        It is in part due to the fact that some police units will always use the field citation_issued as a base, in
+        conjunction with the other actions taken. In those scenarios, citation_issued will be close or equal to 100%.
+
+        Another reason is that some entries do not contain any of the six actions, and therefore are the "dark matter" of
+        those plots.
+      </p>
+
+    <div class="col-lg-12 text-center">
+      <p>
+        There are <a target="_blank" href="https://openpolicing.stanford.edu/data/">a lot of datasets available</a>, and we have generated
+        most
+        the plots for most of the datasets <a
+          target="_blank" href="https://github.com/epfl-ada/ada-2020-project-milestone-p3-p3_abracadabra/tree/master/img/police_actions/part1">in
+          our GitHub Project</a>.
+      </p>
+    </div>
     <div class="col-lg-12 text-center">
       <h3>Part 2 - What actions do Good Cops/Bad Cops take when arresting people?</h3>
       <hr class="light">
@@ -33,50 +95,6 @@
       <p class="text-center">
         XXX
       </p>
-    </div>
-
-      <!-- <div class="col-lg-12 text-center">
-        <img src="img/question-1/officers_age.png" alt="Officers age" width="45%">
-        <img src="img/question-1/officers_years_of_service.png" alt="Officers years of service" width="45%">
-      </div>
-      <div class="col-lg-4 text-center">
-        <p class="text">
-          As visible on the left-hand side, <strong>most police officers are in their 20s and are in their first year of work</strong>.
-        </p>
-
-        <p class="text">
-          The age is pretty well distributed between 25 and 50-years-old otherwise: we have <strong>68% of all police officers in between those two ages</strong>.
-        </p>
-
-        <p class="text">
-          As for the overall experience, <strong>44% of all officers are in their first year in the line of duty</strong> (<strong>57% in their first three years</strong>, and <strong>64% in their five years</strong>)
-        </p>
-      </div> -->
-
-      <div class="col-lg-8 text-center">
-        <img src="img/question-1/officers_gender.png" alt="Officers gender" width="45%">
-        <img src="img/question-1/officers_race.png" alt="Officers race" width="45%">
-      </div>
-      <div class="col-lg-4 text-center">
-        <p class="text">
-        <p class="text">
-          Now, to the genders. Most police officers are men <strong>with an overwhelming majority at 87%</strong>.
-        </p>
-
-        <p>
-          Women are represented at <strong>6.28%</strong>, and the remainder is unknown: data has not been provided in the initial dataset.
-        </p>
-        
-        <p class="text">
-          The races distribution look disproportionate at first sight,
-          but <strong>is actually very close to the distribution of races in the united states</strong>.
-        </p>
-
-        <p class="text">
-          Indeed, according to <a href="https://www.census.gov/quickfacts/fact/table/US/PST045219" target="_blank">US census of 2019</a>, there were 76% of whites, 13.4% of blacks, and 18.5% of hispanics.
-        </p>
-        </p>
-      </div>
     </div>
   </div>
 </section>
