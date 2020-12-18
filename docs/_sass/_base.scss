@@ -20,7 +20,7 @@ hr.light {
 
 .bg-primary a {
     @include transition-all;
-    color: rgb(226, 142, 142);
+    color: rgb(245, 188, 188);
     &:hover,
     &:focus {
         color: lighten(rgb(226, 142, 142), 20%);
