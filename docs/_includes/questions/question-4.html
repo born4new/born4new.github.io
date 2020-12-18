@@ -1,0 +1,61 @@
+<section id="features_racial_bias_coeff">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+	    <h2 class="section-heading">#4 - Correlation between officer's features and racial bias coefficient</h2>
+		<hr class="primary">
+		<p class="text">
+	      Let’s observe if some officer’s features can be relevant to determine the racial bias coefficient.
+		</p>
+	  </div>
+	  <div class="col-lg-6 justify">
+		<p class="text" style="padding-top: 90px; padding-left: 150px;">
+		  If we take a look on the distribution of the racial bias coefficient over male and female, we can see that the distribution is the same. 
+		  We can observe more outliers in the male distribution but we have a lot more data from male officer than female.
+		</p>
+	  </div>
+	  <div class="col-lg-6 text-center">
+	    <img src="img/box_sex_RBC.png" alt="Distribution of the racial bias coefficient officer sex" width="100%" style="padding-right: 150px;">
+	  </div>
+	  <div class="col-lg-12 text-center"></div>
+	  <div class="col-lg-6 text-center">
+	    <img src="img/box_race_RBC.png" alt="Distribution of the racial bias coefficient officer race" width="100%" style="padding-left: 150px;">
+	  </div>
+	  <div class="col-lg-6 justify">
+		<p class="text" style="padding-top: 100px; padding-right: 150px;">
+		  Note that it is also the case if we look the distribution for the Hispanic, white and black officers. 
+		  We can note a little difference but it is not relevant.
+		</p>
+	  </div>
+	  <div class="col-lg-12 text-center"></div>
+	  <div class="col-lg-6 justify">
+		<p class="text" style="padding-top: 75px; padding-left: 150px;">
+		  If we observe the racial bias coefficient across the officer age, we can see that it is well-balanced over the age. 
+		  The slop of the regression plot in black is a little negative but since we have less data for older officers, 
+		  the confidence interval is larger for more than 60 years old and this slop may finally be flat.
+		</p>
+	  </div>
+	  <div class="col-lg-6 text-center">
+	    <img src="img/scatter_age_RBC.png" alt="Scatter plot officer age vs racial bias coefficient" width="100%" style="padding-right: 150px;">
+	  </div>
+	  <div class="col-lg-12 text-center"></div>
+	  <div class="col-lg-6 text-center">
+	    <img src="img/scatter_yof_RBC.png" alt="Scatter plot officer years of service vs racial bias coefficient" width="100%" style="padding-left: 150px;">
+	  </div>
+	  <div class="col-lg-6 justify">
+		<p class="text" style="padding-top: 125px; padding-right: 150px;">
+		  Like for the officer age, the racial bias coefficient is well-balanced across the officer’s years of service.
+		</p>
+	  </div>
+	  <div class="col-lg-12 justify">
+		<p class="text" style="padding-top: 30px;">
+		  Before this study, we thought that there would be some features of officer’s profile which could be used 
+		  to predict if an officer’s stop decision process is subject to a racial bias.
+		  But in the end, we can see that the racial bias coefficient is very well-balanced over the features (or at least among those studied).
+		  Therefore, our conclusion is that racial bias is something somehow universal which can happen with each officer and can not be easily modelised, 
+		  or not only by sex, age, race and years of service of an officer.
+		</p>
+	  </div>
+    </div>
+  </div>
+</section>
