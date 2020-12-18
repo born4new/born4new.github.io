@@ -10,7 +10,7 @@ function resizeImageContainer() {
     });
 }
 
-$(document).ready(function() {
+$(window).on('load', function() {
  
     $(".slideshow-control").each(function() {
         $(this).on('click', 'span', function() {
